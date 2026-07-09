@@ -1,0 +1,11 @@
+/*
+Author: Eric Penkala
+Date: 07-09-26
+File Name: styles.css
+*/
+
+.logo {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
