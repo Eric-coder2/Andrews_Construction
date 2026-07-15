@@ -4,8 +4,198 @@ Date: 07-09-26
 File Name: styles.css
 */
 
-.logo {
-  max-width: 50%;
-  display: block;
+main {
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 300px;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+  white-space: nowrap;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding: 3rem 1rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1a3c6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.cta-button-services {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1a3c6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.stats ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.services ul {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.services li {
+  list-style: none;
+  border-radius: 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/placeholder.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.services-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.learn-more {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-choose-us li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.why-icon {
+  width: 60px;
+  height: auto;
+}
+
+.icon-wrap {
+  background-color: #1a3c6d;
+  padding: 0.35rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-us li:nth-child(odd) {
+  background-color: #f0f1f4;
+}
+
+.cta-button:hover {
+  background-color: #0c182e;
+}
+
+.cta-button:hover {
+  background-color: #0c182e;
+}
+
+.learn-more:hover {
+  background-color: #dfdbdb;
+}
+
+.cta-button-services:hover {
+  background-color: #0c182e;
+}
+
+.why-choose-us li:hover {
+  background-color: #dce3ea;
+}
+
+.why-choose-us li:hover .icon-wrap {
+  background-color: #0f1f3d;
+}
+
+.process ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.process li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #190e50;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.process li > div {
+  flex: 1 1 60%;
+}
+
+.process-photo {
+  flex: 0 0 30%;
+  width: 30%;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.process-icon {
+  width: 50px;
+  height: auto;
 }
