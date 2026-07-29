@@ -10,6 +10,25 @@ main {
 }
 
 header {
+  background-color: #1a3c6d;
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.header-inner h1 {
+  margin: 0;
+}
+
+.header-transparent {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,12 +56,6 @@ nav a {
   white-space: nowrap;
   font-size: 1.2rem;
   margin-right: 1.5rem;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 body {
@@ -376,10 +389,17 @@ footer {
   background-color: #1a3c6d;
   color: white;
   display: flex;
+  justify-content: center;
+}
+
+.footer-inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 3rem 2rem;
   gap: 2rem;
-  align-items: flex-end;
 }
 
 .footer-brand {
@@ -423,4 +443,147 @@ footer a {
   vertical-align: middle;
   margin-right: 0.5rem;
   filter: brightness(0) invert(1);
+}
+
+.ready-to-start {
+  text-align: center;
+  background-color: #1a3c6d;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.ready-to-start h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.ready-to-start .cta-button {
+  background-color: white;
+  color: black;
+}
+
+form {
+  background-color: #1a3c6d;
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: black;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #dfdbdb;
+}
+
+.form-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+.fee-disclaimer {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+
+.fee-disclaimer-form {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 0rem;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.contact-direct {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-direct a {
+  color: #1a3c6d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-direct a:hover {
+  text-decoration: underline;
+}
+
+.contact-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  padding: 2rem 0;
+}
+
+.contact-image-side {
+  flex: 1;
+}
+
+.contact-form-side {
+  flex: 1.3;
+}
+
+.contact-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.contact-info-box {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
