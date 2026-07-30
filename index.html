@@ -269,7 +269,59 @@
       </section> -->
       <section class="ready-to-start">
         <h2>Ready to Start Your Project?</h2>
-        <a href="contact.html" class="cta-button">Request an Estimate</a>
+        <form
+          name="quote-request"
+          class="home-form"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
+          <h3 class="form-heading">Get a Free Estimate Today</h3>
+          <p class="fee-disclaimer">
+            Estimate fees may apply for locations outside our primary service
+            area.
+          </p>
+
+          <input type="hidden" name="form-name" value="quote-request" />
+          <p style="display: none">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <input type="text" name="name" placeholder="Name" required />
+
+          <div class="form-row">
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+
+          <div class="form-row">
+            <input
+              type="text"
+              name="address"
+              placeholder="Project Address"
+              required
+            />
+            <input
+              type="text"
+              name="zip"
+              placeholder="Zip Code"
+              pattern="[0-9]{5}"
+              maxlength="5"
+              required
+            />
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject" required />
+
+          <textarea
+            name="message"
+            placeholder="Tell us about your project"
+            required
+          ></textarea>
+
+          <div data-netlify-recaptcha="true"></div>
+
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -313,8 +365,8 @@
                 alt="Email icon"
                 class="footer-icon"
               />
-              <a href="mailto:andrewsconstructionllc77@gmail.com"
-                >andrewsconstructionllc77@gmail.com</a
+              <a href="mailto:andrewsconstructionll77@gmail.com"
+                >andrewsconstructionll77@gmail.com</a
               >
             </p>
             <p>

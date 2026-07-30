@@ -45,7 +45,7 @@ header {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0;
   margin: 0;
 }
@@ -447,19 +447,14 @@ footer a {
 
 .ready-to-start {
   text-align: center;
-  background-color: #1a3c6d;
-  color: white;
+  color: black;
   padding: 3rem 2rem;
 }
 
 .ready-to-start h2 {
   text-align: center;
+  margin-top: 1rem;
   font-size: 2.5rem;
-}
-
-.ready-to-start .cta-button {
-  background-color: white;
-  color: black;
 }
 
 form {
@@ -512,13 +507,13 @@ form button:hover {
 }
 
 .form-heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 0rem;
 }
 
 .fee-disclaimer {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #ccc;
   margin-top: 0.5rem;
 }
@@ -586,4 +581,8 @@ form button:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.home-form {
+  margin: 0 auto;
 }
