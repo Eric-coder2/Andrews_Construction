@@ -586,3 +586,23 @@ form button:hover {
 .home-form {
   margin: 0 auto;
 }
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details {
+  font-size: 1.2rem;
+  border-radius: 15px;
+  padding: 1rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq h3 {
+  font-size: 1.5rem;
+}
