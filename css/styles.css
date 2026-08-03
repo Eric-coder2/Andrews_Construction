@@ -632,10 +632,6 @@ details {
   transition: max-height 0.3s ease-in-out;
 }
 
-.is-open .faq-answer-wrapper {
-  max-height: 500px;
-}
-
 .faq-answer-wrapper > p {
   overflow: hidden;
 }
