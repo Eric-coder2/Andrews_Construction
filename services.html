@@ -6,6 +6,7 @@
     <title>Services</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/png" href="images/favicon_logo.png" />
+    <script src="js/main.js" defer></script>
     <!-- Favicon icon attribution: Real estate icons created by ADMS ICons - Flaticon | https://www.flaticon.com/free-icons/real-estate -->
   </head>
   <body>
@@ -33,7 +34,145 @@
       </div>
     </header>
     <main>
-      <h2>Our Services</h2>
+      <section class="services">
+        <h2>Services</h2>
+        <ul>
+          <li class="kitchen-bath">
+            <h3>Kitchen & Bath</h3>
+            <p>
+              Full renovations from demolition to finishing — plumbing, tile,
+              cabinetry, and countertops included.
+            </p>
+            <details>
+              <summary>View Services</summary>
+              <div class="faq-answer-wrapper">
+                <ul>
+                  <li>Demolition</li>
+                  <li>Plumbing</li>
+                  <li>Tile & Ceramic</li>
+                  <li>Cabinetry</li>
+                  <li>Countertops</li>
+                  <li>Painting</li>
+                  <li>Accessories</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="interior-finishes">
+            <h3>Interior Finishes</h3>
+            <p>
+              Drywall, painting, flooring, and trim — clean, professional
+              finishing for every room.
+            </p>
+            <details>
+              <summary>View Services</summary>
+              <div class="faq-answer-wrapper">
+                <ul>
+                  <li>Drywall</li>
+                  <li>Insulation</li>
+                  <li>Vinyl Plank & Ceramic Flooring</li>
+                  <li>Interior Painting</li>
+                  <li>Trim & Baseboard</li>
+                  <li>Bar Construction</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="outdoor-living">
+            <h3>Outdoor Living</h3>
+            <p>
+              Custom porches, decks, and patios — from framing to final
+              finishing touches.
+            </p>
+            <details>
+              <summary>View Services</summary>
+              <div class="faq-answer-wrapper">
+                <ul>
+                  <li>Deck & Porch Construction</li>
+                  <li>Patio & Pavers</li>
+                  <li>Foundation Work</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li class="exterior-systems">
+            <h3>Exterior & Systems</h3>
+            <p>
+              Roofing, siding, windows, and electrical — built to last and up to
+              code.
+            </p>
+            <details>
+              <summary>View Services</summary>
+              <div class="faq-answer-wrapper">
+                <ul>
+                  <li>Roofing</li>
+                  <li>Siding</li>
+                  <li>Windows</li>
+                  <li>Exterior Doors</li>
+                  <li>Insulation</li>
+                  <li>Electrical</li>
+                </ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <section class="ready-to-start">
+        <h2>Ready to Start Your Project?</h2>
+        <form
+          name="quote-request"
+          class="home-form"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
+          <h3 class="form-heading">Get a Free Estimate Today</h3>
+          <p class="fee-disclaimer">
+            Estimate fees may apply for locations outside our primary service
+            area.
+          </p>
+
+          <input type="hidden" name="form-name" value="quote-request" />
+          <p style="display: none">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <input type="text" name="name" placeholder="Name" required />
+
+          <div class="form-row">
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+
+          <div class="form-row">
+            <input
+              type="text"
+              name="address"
+              placeholder="Project Address"
+              required
+            />
+            <input
+              type="text"
+              name="zip"
+              placeholder="Zip Code"
+              pattern="[0-9]{5}"
+              maxlength="5"
+              required
+            />
+          </div>
+
+          <input type="text" name="subject" placeholder="Subject" required />
+
+          <textarea
+            name="message"
+            placeholder="Tell us about your project"
+            required
+          ></textarea>
+
+          <div data-netlify-recaptcha="true"></div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <footer>
       <div class="footer-inner">

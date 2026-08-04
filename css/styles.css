@@ -38,7 +38,7 @@ header {
 }
 
 .logo {
-  width: 300px;
+  width: 250px;
   display: block;
 }
 
@@ -663,4 +663,42 @@ details {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.services details {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.services summary {
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  gap: 2rem;
+}
+
+.services summary::after {
+  color: white;
+  border-color: white;
+}
+
+.services > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 0;
+}
+
+.services .faq-answer-wrapper ul {
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
 }
