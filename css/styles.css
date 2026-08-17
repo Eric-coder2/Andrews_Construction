@@ -806,3 +806,37 @@ details {
 .job {
   margin-bottom: 3rem;
 }
+
+@media (max-width: 768px) {
+  .services ul {
+    grid-template-columns: 1fr;
+  }
+  .services > ul {
+    grid-template-columns: 1fr;
+  }
+  .contact-layout {
+    flex-direction: column;
+  }
+  .about-body {
+    flex-direction: column;
+  }
+  .why-choose-us li h3 {
+    white-space: normal;
+  }
+  .process li {
+    padding-left: 6rem;
+  }
+  .footer-inner {
+    flex-direction: column;
+  }
+  .hero ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services ul {
+    grid-template-columns: 1fr;
+  }
+}
