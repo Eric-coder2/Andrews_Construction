@@ -38,7 +38,7 @@ header {
 }
 
 .logo {
-  width: 250px;
+  width: clamp(120px, 25vw, 250px);
   display: block;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .hero h2 {
-  font-size: 4rem;
+  font-size: clamp(1.75rem, 6vw, 4rem);
   margin-bottom: 2.5rem;
 }
 
@@ -119,6 +119,7 @@ body {
   padding: 0;
   margin-top: 0;
   font-size: 1.1rem;
+  flex-wrap: wrap;
 }
 
 .hero p {
@@ -141,8 +142,8 @@ body {
 .services ul {
   color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .kitchen-bath {
@@ -219,13 +220,13 @@ body {
 
 .services h2 {
   text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  margin-bottom: 4rem;
 }
 
 .services > p {
   text-align: center;
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   position: relative;
   top: -2.5rem;
 }
@@ -251,7 +252,7 @@ body {
 .why-choose-us h2 {
   text-align: center;
   margin-top: 3rem;
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 .why-choose-us ul {
@@ -322,7 +323,7 @@ body {
 .process h2 {
   text-align: center;
   margin-top: 3rem;
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 .process ol {
@@ -413,7 +414,7 @@ footer {
 }
 
 .footer-logo {
-  width: 250px;
+  width: clamp(120px, 25vw, 250px);
   height: auto;
   margin-bottom: 2rem;
 }
@@ -551,17 +552,18 @@ form button:hover {
 
 .contact-layout {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: stretch;
   padding: 2rem 0;
 }
 
 .contact-image-side {
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .contact-form-side {
-  flex: 1.3;
+  flex: 1 1 300px;
 }
 
 .contact-image-side img {
@@ -662,7 +664,7 @@ details {
 .faq h2 {
   text-align: center;
   margin-bottom: 4rem;
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 .about-cta {
@@ -694,7 +696,7 @@ details {
 
 .services > ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   align-items: start;
   padding: 0;
@@ -705,29 +707,24 @@ details {
   margin-top: 1rem;
 }
 
-.services h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 4rem;
-}
-
 .page-title {
   text-align: center;
   margin-bottom: 4rem;
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 .about-body {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .about-text {
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .about-image {
-  flex: 1;
+  flex: 1 1 300px;
 }
 
 .about-image img {
@@ -768,7 +765,7 @@ details {
 .how-it-works h2 {
   text-align: center;
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 
 .how-it-works {
@@ -816,22 +813,6 @@ details {
 }
 
 @media (max-width: 768px) {
-  .services ul {
-    grid-template-columns: 1fr;
-  }
-
-  .services > ul {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-layout {
-    flex-direction: column;
-  }
-
-  .about-body {
-    flex-direction: column;
-  }
-
   .why-choose-us li h3 {
     white-space: normal;
   }
@@ -844,12 +825,7 @@ details {
     flex-direction: column;
   }
 
-  .hero h2 {
-    font-size: 2rem;
-  }
-
   .hero ul {
-    flex-wrap: wrap;
     gap: 1rem;
   }
 
@@ -880,9 +856,6 @@ details {
 }
 
 @media (max-width: 480px) {
-  .hero h2 {
-    font-size: 1.5rem;
-  }
   .hero ul {
     gap: 0.5rem;
   }
@@ -911,11 +884,5 @@ details {
   }
   .form-row {
     flex-direction: column;
-  }
-  .logo {
-    width: 150px;
-  }
-  .footer-logo {
-    width: 150px;
   }
 }
