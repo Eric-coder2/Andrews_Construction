@@ -45,3 +45,10 @@ allCarousels.forEach((carousel) => {
     updateCarousel();
   });
 });
+
+const hamburgerBtn = document.querySelector(".hamburger-btn");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+hamburgerBtn.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("is-open");
+});
