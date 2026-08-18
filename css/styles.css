@@ -5,6 +5,7 @@ File Name: styles.css
 */
 
 main {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -696,14 +697,15 @@ details {
 
 .services > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   align-items: start;
   padding: 0;
 }
 
 .services .faq-answer-wrapper ul {
-  gap: 0.9rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
   margin-top: 1rem;
 }
 
@@ -884,5 +886,11 @@ details {
   }
   .form-row {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .services > ul {
+    grid-template-columns: 1fr;
   }
 }
